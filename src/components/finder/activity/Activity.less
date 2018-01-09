@@ -1,0 +1,69 @@
+.activity_box{
+  background-color: #fff;
+}
+.activity_title{
+  padding: .5rem 0;
+  text-align: center;
+  font-size: .45rem;
+  font-weight: 700;
+  color:#000;
+  .iconfont{
+    margin:0 .1rem;
+    &.title_logo_icon{
+     color:red
+    }
+
+  }
+  .active_sub_title{
+    text-align: center;
+    font-size: .26rem;
+    padding-top: .1rem;
+    color:#666
+  }
+}
+.activity_body {
+  padding: .26rem;
+  display: flex;
+}
+.activity_body_item{
+  position: relative;
+  flex:1;
+  width: 0;
+  text-align: center;
+  img{
+    width: 92%;
+    height: 2.9rem;
+  }
+  .food_name{
+    margin-top: .1rem;
+    font-size: .32rem;
+    color:#333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .food_price{
+    margin-top: .1rem;
+    .price{
+      color:red;margin-right: .1rem;
+      font-size: .32rem;
+    }
+    del{
+      text-decoration: line-through;
+    }
+  }
+  .discount_tip{
+    position: absolute;
+    left:4%;
+    top:0;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: .01rem .2rem;
+    border-radius: 3px;
+  }
+}
+.activity_more{
+  padding: .5rem 0;text-align: center;font-size: .32rem;
+}
+

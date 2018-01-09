@@ -1,0 +1,92 @@
+.carousel{
+  position: relative;
+}
+
+/*左右箭头*/
+.button-group span{
+  position: absolute;
+  top:40%;
+  display: block;
+  padding: .2rem .1rem;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 3px;
+  color:#fff;
+  font-family: '宋体';
+  &:first-child{
+    left:.1rem;
+  }
+  &:last-child{
+    right:.1rem;
+  }
+  &:hover{
+    background-color: rgba(0,0,0,.2);
+  }
+}
+/*主体区域*/
+.carousel-image{
+  height: 4rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.swipe_box{
+  height:4rem;
+  overflow: hidden;
+  background-color: white;
+  a{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 1.8rem;
+    margin-top: .2rem;
+    text-align: center;
+    img{
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    p{text-align: center;margin-top: .05rem;font-size: .32rem;}
+  }
+}
+/*小圆点*/
+.carousel-nav {
+  text-align: center;
+  background-color: white;
+  .carousel-nav-item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #C0C0C0;
+    border-radius: 50%;
+    &.carousel-nav-item-active {
+      background-color: #EBEBEB;
+    }
+  }
+}
+// carousel 组件动画
+.carousel-image-item-enter {
+  opacity: 0;
+  transform:   translate(0,-25px);
+  transform: translate3d(0,-25px,0);
+}
+.carousel-image-item-enter.carousel-image-item-enter-active {
+  opacity: 1;
+  transform:   translate(0,0);
+  transform: translate3d(0,0,0);
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+.carousel-image-item-leave {
+  opacity: 1;
+  transform:   translate(0,0);
+  transform: translate3d(0,0,0);
+  transition-property: transform, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+.carousel-image-item-leave.mcarousel-image-item-leave-active {
+  opacity: 0;
+  transform:   translate(0,25px);
+  transform: translate3d(0,25px,0);
+}

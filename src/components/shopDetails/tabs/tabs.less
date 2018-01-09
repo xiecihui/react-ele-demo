@@ -1,0 +1,29 @@
+.tabs_title_box{
+  display: flex;
+  font-size: .35rem;
+  font-weight: bold;
+  color:#666;
+  background-color: white;
+  .tabs_title{
+    position: relative;
+    flex:1;
+    height:1rem;
+    line-height:1rem;
+    text-align: center;
+    border-bottom: 0.013333rem solid #eee;
+    &.active{
+      color:#00aaff;
+      &:after{
+        content:'';
+        position: absolute;
+        left:50%;
+        bottom:0;
+        margin-left: -.4rem;
+        width: .8rem;
+        height: 2PX;
+        background-color: #00aaff;
+      }
+    }
+  }
+
+}

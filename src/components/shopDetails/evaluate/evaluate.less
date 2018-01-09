@@ -1,0 +1,123 @@
+ul,li{list-style: none}
+*{padding: 0;margin: 0}
+body{font-size: .3rem;color:#666}
+a{text-decoration: none}
+/*评价页面*/
+/*上方的评分 总概括*/
+.evaluate_box{overflow-y:auto;height:100%;background-color: #fff}
+.evaluate_title{
+  padding: .36rem;
+  margin-bottom: .26rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.013333rem solid #eee;
+
+  .evaluate_title_num{
+    padding-right: .36rem;
+    border-right:1px solid #ddd;
+    text-align: center;
+    .evaluate_title_hint{
+      font-size: .64rem;
+      font-weight: 400;
+      color: #ff6000;
+      font-weight: 700;
+
+      display: block;
+
+    }
+    .evaluate_title_1{
+      font-size: .32rem;
+    }
+    .evaluate_title_2{
+     color:#999;
+      font-size: .26rem;
+    }
+
+  }
+  .evaluate_title_score{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .32rem;
+    .evaluate_score_wrap{
+      margin:.05rem 0;
+      width: 80%;
+    }
+    .evaluate_score_star,.evaluate_time{
+      padding-left: .2rem;
+
+    }
+    .evaluate_star_num{color: #ff6000;}
+
+  }
+}
+.evaluate_body{
+  padding: .26rem .26rem 0;
+  .evaluate_tab_box{
+    padding-bottom: .2rem;
+    border-bottom: 0.013rem solid #ddd;
+    .evaluateTab_title{
+      display: inline-block;
+      padding:.1rem .25rem;
+      margin:.15rem;
+      color:#6d7885;
+      background-color: #ebf5ff;
+      border-radius: 3px;
+      &.rating_tags_on{
+        background-color: #0097ff;
+        color:#fff
+      }
+      &.rating_tags_no{
+        background-color: #f5f5f5;
+        color:#aaa;
+        &.rating_tags_on{
+          background-color: #ccc;
+          color:#fff;
+
+       }
+      }
+
+    }
+  }
+}
+/*评价详情*/
+.evaluate_body_li{
+  padding: .3rem 0;
+  border-bottom: 1px solid #eee;
+}
+.evaluate_body_li_wrap{
+  position: relative;
+  padding-left: 1.2rem;
+  .evaluate_body_li_userImg{
+    position: absolute;
+    top:0;
+    left:0;
+    width: .8rem;
+    height: .8rem;
+  }
+  .evaluate_body_li_user{
+    h3{display: inline-block;margin-right: .1rem;color:#000}
+    small{color:#999}
+  }
+  .evaluate_body_li_photo{
+    li{
+      display: inline-block;
+
+      margin:.1rem;
+
+    }
+    img{width: 1.8rem;
+      height: 1.8rem;}
+  }
+  .evaluate_body_li_word{
+    li{
+      display: inline-block;margin:.1rem;padding: .1rem .2rem;max-width:1.8rem;
+      border:1px solid #eee;border-radius: 2px;
+      white-space: nowrap;overflow: hidden;text-overflow: ellipsis;
+    }
+  }
+}
+
+
+

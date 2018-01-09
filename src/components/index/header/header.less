@@ -1,0 +1,41 @@
+.index_header{
+  padding: .26rem .26rem 0;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0af), to(#0085ff));
+  background-image: -webkit-linear-gradient(left, #0af, #0085ff);
+  background-image: -o-linear-gradient(left, #0af, #0085ff);
+  background-image: linear-gradient(90deg, #0af, #0085ff);
+}
+.header_title{
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .index_address{
+    width: 60%;
+    font-size: .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .address_word{
+      display: inline-block;
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .drop_icon{
+      font-size: .3rem;
+    }
+  }
+  .weather{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    .weather_describe{transform: scale(.8)}
+    .weather_icon{font-size: .5rem}
+
+  }
+}

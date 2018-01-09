@@ -1,0 +1,44 @@
+.entry_box{
+  background-color: white;
+  .entry_part1{
+    overflow: hidden;
+  }
+}
+.entry_part1_item{
+  float: left;
+  width: 50%;
+  padding:.4rem .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1PX solid #ededed;
+  &:first-child{
+    border-right: 1PX solid #ededed;
+  }
+  &:nth-child(3){
+    border-right: 1PX solid #ededed;
+  }
+  h3{
+    font-size: .4rem;
+    margin-bottom: .05rem;
+  }
+  .entry_part1_img{
+    width: 1.1rem;
+    height: auto;
+    border-radius: 50%;
+
+  }
+}
+.entry_part2{
+  .entry_part2_item{
+    display: flex;
+    height: 2.4rem;
+    overflow: hidden;
+    align-items: center;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}

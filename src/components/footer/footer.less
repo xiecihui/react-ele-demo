@@ -1,0 +1,34 @@
+.footer_box{
+  height: 1.6rem;
+
+}
+.footer_wrap{
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.4rem;
+  background-color: #fff;
+  border-top:1px solid #f5efef;
+  display: flex;
+  .footer_item{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .iconfont{
+      font-size:.5rem
+    }
+    .footer_item_word{
+      display: block;
+      margin-top: .02rem;
+    }
+    &.active{
+      background: -webkit-linear-gradient(left, #0af , #0085ff);     /* 背景色渐变 */
+      -webkit-background-clip: text;         /* 规定背景的划分区域 */
+      -webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+    }
+  }
+}
